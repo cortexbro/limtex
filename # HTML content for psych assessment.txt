@@ -1,0 +1,117 @@
+# HTML content for psych assessments
+html_content = """
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Psych Assessments</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 40px;
+            background-color: #f5f7fa;
+            color: #333;
+            line-height: 1.6;
+        }
+        h1, h2 {
+            color: #2c3e50;
+        }
+        section {
+            margin-bottom: 40px;
+        }
+        pre {
+            background: #e8ecf0;
+            padding: 20px;
+            border-left: 5px solid #3498db;
+            white-space: pre-wrap;
+        }
+    </style>
+</head>
+<body>
+    <h1>Psychological Assessments Overview</h1>
+
+    <section>
+        <h2>DSM-5 Personality Disorders</h2>
+        <pre>
+CLUSTER A (Odd, Eccentric)
+- Paranoid Personality Disorder
+- Schizoid Personality Disorder
+- Schizotypal Personality Disorder
+
+CLUSTER B (Dramatic, Emotional, Erratic)
+- Antisocial Personality Disorder
+- Borderline Personality Disorder
+- Histrionic Personality Disorder
+- Narcissistic Personality Disorder
+
+CLUSTER C (Anxious, Fearful)
+- Avoidant Personality Disorder
+- Dependent Personality Disorder
+- Obsessive-Compulsive Personality Disorder (OCPD)
+        </pre>
+    </section>
+
+    <section>
+        <h2>Common Personality Tests</h2>
+        <pre>
+1. MBTI (Myers-Briggs Type Indicator)
+   - 16 types based on 4 dichotomies (e.g., INFP, ESTJ)
+
+2. Big Five (OCEAN)
+   - Openness
+   - Conscientiousness
+   - Extraversion
+   - Agreeableness
+   - Neuroticism
+
+3. MMPI-2 (Minnesota Multiphasic Personality Inventory)
+   - 567 true/false items, used for clinical diagnostics
+
+4. Eysenck Personality Questionnaire
+   - Focus on Extraversion, Neuroticism, Psychoticism
+        </pre>
+    </section>
+
+    <section>
+        <h2>Mini-Mental State Examination (MMSE)</h2>
+        <pre>
+MAX SCORE: 30
+
+1. Orientation (10 points)
+   - Date (year, season, date, day, month) = 5 pts
+   - Location (state, country, town, hospital, floor) = 5 pts
+
+2. Registration (3 points)
+   - Name 3 unrelated objects. Ask patient to repeat them.
+
+3. Attention & Calculation (5 points)
+   - Serial 7s from 100 (93, 86, ...) OR spell "WORLD" backwards
+
+4. Recall (3 points)
+   - Ask to recall the 3 words from earlier
+
+5. Language (9 points)
+   - Name 2 objects (e.g., pencil, watch) = 2 pts
+   - Repeat: “No ifs, ands, or buts” = 1 pt
+   - Follow 3-step command = 3 pts
+   - Read & obey: “Close your eyes” = 1 pt
+   - Write a sentence = 1 pt
+   - Copy a design (two intersecting pentagons) = 1 pt
+
+Interpretation:
+- 25-30: Normal
+- 21-24: Mild cognitive impairment
+- 10-20: Moderate
+- <10: Severe
+        </pre>
+    </section>
+</body>
+</html>
+"""
+
+# Save the HTML content to a file
+html_path = "/mnt/data/psych_assessments.html"
+with open(html_path, "w") as f:
+    f.write(html_content)
+
+html_path
